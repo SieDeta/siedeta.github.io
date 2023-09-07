@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tunik Lulu</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="produk.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="img/logo_tangga.png"
+            alt="Logo"
+            width="auto"
+            height="auto"
+            class="me-2"
+          />
+          <strong id="logos">TOKO TANGGA</strong>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a
+              class="nav-link active"
+              href="../homepage_remastered/homepage.html"
+              ><i class="fa-sharp fa-solid fa-house-user me-2"></i>Beranda</a
+            >
+            <a
+              class="nav-link active"
+              href="../homepage_remastered/homepage.html#kategori"
+              ><i class="fa-solid fa-star me-2"></i>Kategori</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End of navbar -->
+
+    <!-- BreadCrumb -->
+    <div class="container">
+      <nav aria-label="breadcrumb" class="mt-3">
+        <ul class="breadcrumb p-3">
+          <li class="breadcrumb-item">
+            <a href="../homepage_remastered/homepage.html">Beranda</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="../homepage_remastered/homepage.html#tunik">Kembali</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Produk</li>
+        </ul>
+      </nav>
+    </div>
+    <!-- akhir breadcrumb -->
+
+    <!-- single product -->
+    <div class="container padding-second">
+      <div class="row row-produk">
+        <div class="col-lg-5">
+          <img
+            src="Data Situs/Tunik/Tunik1.jpg"
+            class="figur-display figure-img img-fluid rounded"
+          />
+        </div>
+
+        <div class="col-lg-4">
+          <input type="hidden" value="Tunik Lulu" id="namaBarang" />
+          <h4>Tunik Lulu</h4>
+          <div class="line"></div>
+          <input type="hidden" value="86000" id="hargaBarang" />
+          <h3 class="text-muted mb-3">Rp 86.000</h3>
+
+          <div class="row g-3 mt-3">
+            <div class="col-md-12">
+              <label for="warnaBarang" class="form-label">Warna</label>
+              <select
+                class="form-select w-50"
+                aria-label="Default select example"
+                id="warnaBarang"
+              >
+                <option selected></option>
+                <option value="Merah">Merah</option>
+                <option value="Hitam">Hijau</option>
+                <option value="Kuning">Putih</option>
+                <option value="Biru">Biru Muda</option>
+                <option value="Abu-abu">Abu-abu</option>
+                <option value="Abu-abu">Cokelat</option>
+              </select>
+              <div class="invalid-feedback">Wajib memilih warna barang.</div>
+            </div>
+
+            <div class="col-md-12 mt-3">
+              <label for="ukuranBarang" class="form-label">Ukuran </label>
+              <select
+                class="form-select w-50"
+                aria-label="Default select example"
+                id="ukuranBarang"
+              >
+                <option selected></option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+              </select>
+              <div class="invalid-feedback">Wajib memilih ukuran barang.</div>
+            </div>
+          </div>
+
+          <div class="mb-3 mt-3">
+            <label for="jumlahBarang" class="form-label">Jumlah Barang</label>
+            <input
+              type="number"
+              min="5"
+              class="form-control w-25"
+              id="jumlahBarang"
+              name="jumlahBarang"
+            />
+            <div class="form-text">
+              Minimal pembelian barang berjumlah <b>5</b>
+            </div>
+                      
+          </div>
+
+          <!-- me = margin right -->
+          <!-- Button trigger modal -->
+          <div class="btn-produk mb-5 mt-4">
+            <button
+              type="button"
+              class="btn btn-success text-white btn-md"
+              id="tombolBeli"
+            >
+              <a
+                ><i class="fa-sharp fa-solid fa-money-bill fs-6 me-2"></i>Beli
+                Sekarang</a
+              >
+            </button>
+            <button
+              type="button"
+              id="example-btn"
+              class="btn btn-secondary"
+              onclick="window.open ('https://wa.me/+628122509383', '_blank')"
+            >
+              <i class="fa-brands fa-whatsapp"></i>Hubungi WhatsApp
+            </button>
+          </div>
+        </div>
+
+        <!-- Deskripsi -->
+        <div class="col-lg-3">
+          <h4>Deskripsi Produk</h4>
+          <div class="line"></div>
+          <input type="hidden" value="Lulu Blue Tunik" id="jenisBarang" />
+          <h3 class="text-muted mb-3">Lulu Blue Tunik</h3>
+          <p class="description">
+            📌 RINCIAN PRODUK <br />
+            “Garis pantai bak’ lukisan, <br />
+            aneka ragam wisata bahari <br />
+            dengan lebih dari 870 jenis biota laut. <br />
+            Tak ragu menjadikan Pulau Derawan sebagai salah satu <br />
+            surga menawan di timur Kalimantan. <br />
+            Seluruh mahakarya Derawan, kami abadikan dalam <br />
+            kecantikan lembaran desain motif kain.” <br />
+            An Exclusive Jelita Indonesia Collection Series From ZM Zaskia Mecca
+            <br />
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- akhir deskripsi -->
+    <!-- akhir single product -->
+
+    <!-- FOOTER -->
+    <footer class="bg-dark">
+      <div class="container">
+        <div class="row g-4 justify-content-between">
+          <div class="col-auto">
+            <h6 class="mb-0">© Copyright TOKO TANGGA. All Rights Reserved</h6>
+          </div>
+          <div class="col-auto">
+            <h6 class="mb-0">
+              <p>
+                Follow Us!
+                <a
+                  class="mx-2"
+                  href="https://www.instagram.com/trisnotokotangga/"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a class="" href="https://www.facebook.com/trisnocahgunung/"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+              </p>
+            </h6>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- akhir footer -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://kit.fontawesome.com/738f568398.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>

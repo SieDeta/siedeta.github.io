@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap");
+
+:root {
+  --lg-font: "Kaisei Tokumin", serif;
+  --sm-font: "Poppins", sans-serif;
+  --c-nav: #f47174;
+  --c-line: #f47174;
+  --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.08);
+  --c-brand: #4e57d4;
+  --c-brand-light: #6970dd;
+  --c-grey: #545454;
+  --c-footer: #f47174;
+  --c-swhite: #fbfaf5;
+}
+
+body {
+  /* background-color: #eaeaea; */
+  font-family: var(--sm-font);
+  color: #2d2d2d;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* min-height: 4000px; */
+}
+
+.padding-second {
+  padding-bottom: 60px;
+}
+
+.section-padding {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* NAVBAR */
+.navbar {
+  box-shadow: var(--box-shadow);
+}
+
+#logos {
+  color: var(--c-grey);
+}
+.navbar-nav .nav-link.active {
+  color: var(--c-grey);
+}
+
+.navbar-nav .nav-link.active:hover {
+  color: var(--c-nav);
+}
+
+.navbar-brand img {
+  width: 50px;
+  height: 50px;
+}
+
+.form-control {
+  font-size: 14px;
+}
+/* responsive layar besar */
+
+/* search bar */
+@media screen and (min-width: 994px) {
+  .form-control {
+    width: 350px;
+  }
+
+  /* navbar nav */
+}
+@media screen and (max-width: 994px) {
+  .navbar-nav {
+    text-align: center;
+  }
+}
+/* END NAVBAR */
+
+/* BREADCRUMB */
+.breadcrumb a {
+  text-decoration: none;
+  color: var(--c-nav);
+}
+/* end breadcrumb */
+
+/* gambar produk */
+.row-produk {
+  background-color: white;
+  margin: 0;
+  padding: 5px;
+  padding-top: 16px;
+}
+
+.row-produk img {
+  border-radius: 5px;
+  width: 450px;
+  height: 450px;
+}
+
+.figur-display {
+  height: auto;
+  width: auto;
+}
+
+@media screen and (max-width: 994px) {
+  .figur-display {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.figure-caption img {
+  width: 80px;
+  height: 100%;
+  object-fit: cover;
+}
+/* end gambar produk */
+
+/* isi produk */
+.line {
+  width: 250px;
+  height: 4px;
+  background-color: var(--c-line);
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+.produk-quantity {
+  font-size: 20px;
+}
+
+.btn-produk a {
+  font-size: 14px;
+}
+
+/* end isi produk */
+
+/* footer */
+footer {
+  margin-top: auto;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  color: var(--c-swhite);
+}
+
+footer img {
+  width: 50px;
+  height: 50px;
+}
+
+footer.fa {
+  width: 300px;
+}
+
+footer a {
+  color: var(--c-swhite);
+  width: 200px;
+  height: 200px;
+}
+footer a:hover {
+  color: var(--c-footer);
+}
+
+/* akhir footer */
