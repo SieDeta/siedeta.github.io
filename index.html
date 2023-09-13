@@ -4,294 +4,567 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Deta's Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+    <title>Portfolio - Deta Dirganjaya</title>
+    <link rel="shortcut icon" href="/assets/images/logo_web.png" />
+    <!--
+    - favicon
+  -->
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
   </head>
 
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Deta</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#certificate">Certificate</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Deta</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#certificate" onclick="toggleMenu()">Certificate</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
+    <!--
+    - #MAIN
+  -->
 
-    <!-- profile -->
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Sie Deta Dirganjaya</h1>
-        <p class="section__text__p2">FrontEnd and BackEnd Developer</p>
-        <div class="btn-container">
-          <button class="btn btn-color-2" onclick="window.open('./assets/CV_Best.pdf')">Download CV</button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
-        </div>
-        <div id="socials-container">
-          <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/detadirganjaya/'" />
-          <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/SieDeta'" />
-          <img src="./assets/instagram.png" alt="My Github profile" class="icon" onclick="location.href='https://www.instagram.com/siedeta/'" />
-        </div>
-      </div>
-    </section>
-    <!-- END OF PROFILE -->
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
 
-    <!-- ABOUT -->
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img src="./assets/about-pic.jpg" alt="Profile picture" class="about-pic" />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-              <h3>Experience</h3>
-              <p>1 years <br />FrontEnd and BackEnd Development</p>
-            </div>
-            <div class="details-container">
-              <img src="./assets/education.png" alt="Education icon" class="icon" />
-              <h3>Education</h3>
-              <p>
-                3rd Semester of Dian Nuswantoro University <br />
-                Faculty of Computer Science Engineering
-              </p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Regards! I am a student majoring in Computer Science from Dian Nuswantoro University (UDINUS). I have a great passion for technology and programming, so I continue to pursue new knowledge and strive to become a committed
-              professional in the world of IT. Apart from that, I also enjoy collaborating and sharing ideas with colleagues to produce creative solutions in the ever-evolving world of technology.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
-    </section>
-    <!-- END OF ABOUT -->
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img src="./assets/images/avatar.png" alt="Richard hanrick" width="80" style="border-radius: 20px" />
+          </figure>
 
-    <!-- EXPERIENCE -->
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">FrontEnd Development</h2>
-            <div class="article-container">
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Dart</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
+          <div class="info-content">
+            <h1 class="name" title="Richard hanrick">Deta Dirganjaya</h1>
+            <p class="title" style="margin-bottom: 5 px">Front-End Developer</p>
           </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">BackEnd Development</h2>
-            <div class="article-container">
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>PHP</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>C++</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
-    </section>
-    <!-- END OF EXPERIENCE -->
 
-    <!-- PROJECT -->
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/tokotangga.png" alt="Project 1" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              E-Commerce Website <br />
-              Toko Tangga Evi Collection Johar Baru
-            </h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/SieDeta/website-ecommerce-toko-tangga-johar'">Github</button>
-              <button class="btn btn-color-2 project-btn" onclick="location.href='./project/tokotangga/index.html'">Live Demo</button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/onlineshop.png" alt="Project 2" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Online Shop Website</h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/SieDeta/ecommerce-CI4'">Github</button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/AutoRent.png" alt="Project 3" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Car Rental Website</h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/SieDeta/laravel_rent_car'">Github</button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/todolist.png" alt="Project 3" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">To Do List Website</h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/SieDeta/to-do-list'">Github</button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/kalkulator_flutter.png" alt="Project 3" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Flutter Calculator App</h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/SieDeta/flutter_kalkulator'">Github</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#certificate'" />
-    </section>
-    <!-- END OF PROJECT -->
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
 
-    <!-- CERTIFICATE -->
-    <section id="certificate">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Certificate</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/certificate_btng_web.png" alt="Project 1" class="certificate-img" />
-            </div>
-            <h2 class="experience-sub-title certificate-title">Basic Training For Next Generation Web</h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2" onclick="window.open('./assets/btng_web.pdf')">View</button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/certificate_btng_mobile.png" alt="Project 2" class="certificate-img" />
-            </div>
-            <h2 class="experience-sub-title certificate-title">Basic Training For Next Generation Mobile</h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2" onclick="window.open('./assets/btng_mobile.pdf')">View</button>
-            </div>
-          </div>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
-      </div>
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-    </section>
 
-    <!-- END OF CERTIFICATE -->
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
 
-    <!-- CONTACT -->
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-          <p><a href="mailto:deta.semarang@gmail.com">deta.semarang@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-          <p><a href="https://www.linkedin.com/in/detadirganjaya/">LinkedIn</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img src="./assets/instagram.png" alt="LinkedIn icon" class="icon contact-icon" />
-          <p><a href="https://www.instagram.com/siedeta/">Instagram</a></p>
-        </div>
-      </div>
-    </section>
-    <!-- END OF CONTACT -->
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
 
-    <!-- FOOTER -->
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#certificate">Certificate</a></li>
-            <li><a href="#contact">Contact</a></li>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:deta.semarang@gmail.com" class="contact-link">deta.semarang@gmail.com</a>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="tel:+6282136681582" class="contact-link">+62-821-3668-1582</a>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+
+                <time datetime="2004-09-14">September 14 , 2004</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Semarang, Indonesia</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="https://www.linkedin.com/in/detadirganjaya/" class="social-link">
+                <ion-icon name="logo-linkedin"> </ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="https://github.com/SieDeta" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="https://www.instagram.com/siedeta/" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
           </ul>
         </div>
-      </nav>
-      <p>Copyright &#169; 2023 Sie Deta Dirganjaya. All Rights Reserved.</p>
-    </footer>
-    <!-- END OF FOOTER -->
+      </aside>
 
-    <script src="script.js"></script>
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Certificates</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h3 class="h2 article-title">Who am I?</h3>
+          </header>
+
+          <section class="about-text">
+            <h1>I'm <span class="auto-type"></span></h1>
+            <p>
+              Greetings! I am a college student at Dian Nuswantoro University (UDINUS), specifically in the Faculty of Computer Science. I have a deep passion for technology and programming. Since childhood, I have been fascinated by the
+              world of technology, and as time has passed, my interest has deepened. Currently, I am pursuing my dream of becoming an expert in the field of programming. I enjoy tackling complex challenges in problem-solving and designing
+              creative solutions through code.
+            </p>
+
+            <p>
+              Apart from my love for technology, I also have a hobby of playing badminton. I find in this sport not only physical enjoyment but also lessons in teamwork, discipline, and determination to achieve goals. The joy of playing
+              badminton teaches me to strike a balance between productivity in the world of technology and maintaining health and balance in life.
+            </p>
+            <p>
+              I also want to state that I am always open to collaboration or cooperation opportunities. I believe that collaboration is the best way to learn, grow, and create great things. If you have project ideas or collaboration
+              opportunities that are interesting, I would be more than happy to listen and contribute to the best of my ability. Let's collaborate to create innovative solutions and make a difference in the world of technology. Thank you
+              for your time, and I am very excited to embark on this journey together!
+            </p>
+          </section>
+
+          <section class="service">
+            <header>
+              <h3 class="h2 article-title">Curious about what I do?</h3>
+            </header>
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="/assets/images/web-development.svg" alt="design icon" width="40" />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web Development</h4>
+                  <p class="service-item-text">On my way to becoming a Full-Stack Web Developer.</p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--
+          - testimonials modal
+        -->
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+                <time datetime="2021-06-14">14 June, 2021</time>
+
+                <div data-modal-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!--
+          - clients
+        --></article>
+
+        <!--
+        - #RESUME
+      -->
+
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">My Life Journey</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Dian Nuswantoro University</h4>
+
+                <span>2022 - Now </span>
+
+                <p class="timeline-text">Computer Science Engineering Student at Dian Nuswantoro University</p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Sedes Sapientiae High School</h4>
+
+                <span>2020-2022</span>
+
+                <p class="timeline-text">High school students in the science study program</p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Gatra Badminton Club</h4>
+
+                <span>2011 - 2015</span>
+
+                <p class="timeline-text">Trained and prepared to become a badminton athlete. Participating in the mayor's cup competition, student week, and sports day.</p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Altrec Badminton CLub</h4>
+
+                <span>2017-2019 </span>
+
+                <p class="timeline-text">Getting the opportunity to join and train with fellow badminton athletes.</p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Toko Tangga Web E-Commerce Development</h4>
+
+                <span>2023</span>
+
+                <p class="timeline-text">Collaborative projects with lecturers. Get the Front-End task of designing the UI / UX appearance.</p>
+              </li>
+            </ol>
+          </section>
+        </article>
+
+        <!--
+        - #PORTFOLIO
+      -->
+
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Web Development</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Flutter App</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>Select category</div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web Development</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Flutter App</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li class="project-item active" data-filter-item data-category="web development">
+                <a href="https://github.com/SieDeta/website-ecommerce-toko-tangga-johar" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </div>
+                    <img src="/assets/images/tokotangga.png" alt="" loading="lazy" />
+                  </figure>
+
+                  <h3 class="project-title">Toko Tangga E-Commerce</h3>
+                  <p class="project-category">Website Development</p>
+                </a>
+              </li>
+
+              <li class="project-item active" data-filter-item data-category="web development">
+                <a href="https://github.com/SieDeta/ecommerce-CI4">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </div>
+
+                    <img src="/assets/images/onlineshop.png" alt="metaspark" loading="lazy" />
+                  </figure>
+
+                  <h3 class="project-title">CI4 Online Shop</h3>
+
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
+
+              <li class="project-item active" data-filter-item data-category="web development">
+                <a href="https://github.com/SieDeta/laravel_rent_car">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </div>
+
+                    <img src="/assets/images/AutoRent.png" alt="metaspark" loading="lazy" />
+                  </figure>
+
+                  <h3 class="project-title">Auto Rent</h3>
+
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
+
+              <li class="project-item active" data-filter-item data-category="web development">
+                <a href="https://github.com/SieDeta/to-do-list">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </div>
+
+                    <img src="/assets/images/todolist.png" alt="metaspark" loading="lazy" />
+                  </figure>
+
+                  <h3 class="project-title">To Do List</h3>
+
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
+
+              <li class="project-item active" data-filter-item data-category="flutter app">
+                <a href="https://github.com/SieDeta/flutter_kalkulator">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </div>
+
+                    <img src="/assets/images/kalkulator_flutter.png" alt="metaspark" loading="lazy" />
+                  </figure>
+
+                  <h3 class="project-title">Flutter App Calculator</h3>
+
+                  <p class="project-category">Flutter App</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #CERTIFICATES
+      -->
+        <article class="certificates" data-page="certificates">
+          <header>
+            <h2 class="h2 article-title">Certificates</h2>
+          </header>
+
+          <section class="certificates">
+            <ul class="project-list">
+              <li class="project-item active">
+                <a href="#" onclick="window.open('/assets/images/docs/international.pdf', '_blank'); return false;">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="/assets/images/international.png" alt="" loading="lazy" />
+                  </figure>
+                  <h3 class="project-title">Milenials Entrepeneur Summit Singapore and Malaysia 2022</h3>
+                  <p class="project-category">Semarang Young Entrepeneur Festival 2022</p>
+                </a>
+              </li>
+
+              <li class="project-item active">
+                <a href="#" onclick="window.open('/assets/images/docs/entrepeneur.pdf', '_blank'); return false;">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="/assets/images/entrepeneur.png" alt="" loading="lazy" />
+                  </figure>
+
+                  <h3 class="project-title">Soft Skills Entrepreneurship</h3>
+                  <p class="project-category">Semarang Young Entrepeneur Festival 2022</p>
+                </a>
+              </li>
+
+              <li class="project-item active">
+                <a href="#" onclick="window.open('/assets/images/docs/public_speaking.pdf', '_blank'); return false;">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="/assets/images/public_speaking.png" alt="" loading="lazy" />
+                  </figure>
+
+                  <h3 class="project-title">Soft Skills Public Speaking</h3>
+                  <p class="project-category">Semarang Young Entrepeneur Festival 2022</p>
+                </a>
+              </li>
+
+              <li class="project-item active">
+                <a href="#" onclick="window.open('/assets/images/docs/leadership.pdf', '_blank'); return false;">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="/assets/images/leadership.png" alt="" loading="lazy" />
+                  </figure>
+
+                  <h3 class="project-title">Sodt Skills Leadership</h3>
+                  <p class="project-category">Semarang Young Entrepeneur Festival 2022</p>
+                </a>
+              </li>
+
+              <li class="project-item active">
+                <a href="#" onclick="window.open('/assets/images/docs/btng_web.pdf', '_blank'); return false;">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="/assets/images/certificate_btng_web.png" alt="" loading="lazy" />
+                  </figure>
+
+                  <h3 class="project-title">BTNG Divisi Web</h3>
+                  <p class="project-category">Basic Training For Next Generation</p>
+                </a>
+              </li>
+
+              <li class="project-item active">
+                <a href="#" onclick="window.open('/assets/images/docs/btng_mobile.pdf', '_blank'); return false;">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="/assets/images/certificate_btng_mobile.png" alt="" loading="lazy" />
+                  </figure>
+
+                  <h3 class="project-title">BTNG Divisi Mobile</h3>
+                  <p class="project-category">Basic Training For Next Generation</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #CONTACT
+      --></div>
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- TYPED JS -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: ["Sie Deta Dirganjaya.", "A Tech Enthusiast."],
+        typeSpeed: 50,
+        backSpeed: 15,
+        loop: true,
+      });
+    </script>
+    <!-- //TYPED JS -->
   </body>
 </html>
