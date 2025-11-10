@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sie, Deta Dirganjaya</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      body {
+        font-family: Helvetica, Arial, sans-serif;
+      }
+      a {
+        color: #52adc8;
+        text-decoration: underline;
+
+        a:hover {
+          color: #3b7d91;
+        }
+      }
+
+      .custom-link {
+        color: #6a7282;
+        text-decoration: none;
+      }
+      .custom-link:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body class="text-gray-700">
+    <!-- Navbar -->
+    <nav class="container mx-auto py-7 px-6">
+      <h1 class="text-lg font-semibold text-gray-500">Sie, Deta Dirganjaya</h1>
+    </nav>
+    <hr class="border-gray-200" />
+    <div class="max-w-7xl mx-auto py-12 px-6">
+      <div class="lg:grid lg:grid-cols-12">
+        <!-- Sidebar -->
+        <aside
+          class="lg:col-span-2 mb-8 lg:mb-0 lg:sticky lg:top-6 max-h-[calc(100vh-8rem)] overflow-y-auto"
+        >
+          <!-- Profile Section -->
+          <div class="flex lg:flex-col flex-row items-center gap-4">
+            <!-- Profile Image -->
+            <div
+              class="lg:size-39 size-22 bg-white border border-gray-200 rounded-full flex items-center justify-center flex-shrink-0"
+            >
+              <img
+                src="profile.jpg"
+                alt="Sie, Deta Dirganjaya"
+                class="lg:size-36 size-20 rounded-full object-cover"
+                width="900"
+                height="900"
+              />
+            </div>
+
+            <div class="flex-1">
+              <div class="flex items-center justify-between gap-2">
+                <h1 class="text-lg font-bold text-gray-600">Sie, Deta Dirganjaya</h1>
+
+                <!-- Follow Button - Mobile Only -->
+                <button
+                  id="followBtn"
+                  class="lg:hidden font-semibold px-4 py-1.5 border border-gray-300 text-gray-600 text-sm rounded-lg hover:bg-gray-100 transition-colors"
+                >
+                  Follow
+                </button>
+              </div>
+
+              <!-- Description -->
+              <p class="text-sm text-gray-500">
+                Computer Science Student <br />
+                at Dian Nuswantoro University
+              </p>
+            </div>
+
+            <!-- Dropdown Menu - Mobile Only -->
+            <div
+              id="dropdownMenu"
+              class="hidden lg:!hidden fixed top-45 right-4 w-42 bg-white rounded-lg shadow-lg border border-gray-200 z-50"
+            >
+              <div class="p-4 space-y-2">
+                <a
+                  href="mailto:deta.semarang@gmail.com"
+                  class="flex items-center gap-2 text-sm custom-link"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="size-4"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                  </svg>
+                  Email
+                </a>
+                <a
+                  href="https://www.instagram.com/siedeta"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center gap-2 text-sm custom-link"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="size-4"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                  </svg>
+                  Instagram
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/detadirganjaya/"
+                  target="_blank"
+                  class="flex items-center gap-2 text-sm custom-link"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="size-4"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                    />
+                    <rect width="4" height="12" x="2" y="9" />
+                    <circle cx="4" cy="4" r="2" />
+                  </svg>
+                  LinkedIn
+                </a>
+                <a
+                  href="https://github.com/SieDeta"
+                  target="_blank"
+                  class="flex items-center gap-2 text-sm custom-link"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="size-4"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                    />
+                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                  </svg>
+                  GitHub
+                </a>
+                <a
+                  href="https://siedeta.vercel.app/Deta-CV.pdf"
+                  download
+                  class="flex items-center gap-2 text-sm custom-link"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="size-4"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"
+                    />
+                    <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+                    <path d="M16 22a4 4 0 0 0-8 0" />
+                    <circle cx="12" cy="15" r="3" />
+                  </svg>
+                  Download CV
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Links - Desktop Only -->
+          <div class="px-2 space-y-2 text-sm hidden lg:block mt-4">
+            <a
+              href="mailto:deta.semarang@gmail.com"
+              class="flex items-center gap-2 text-sm custom-link"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="size-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+              </svg>
+              Email
+            </a>
+            <a
+              href="https://www.instagram.com/siedeta"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center gap-2 text-sm custom-link"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="size-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+              </svg>
+              Instagram
+            </a>
+            <a
+              href="https://www.linkedin.com/in/detadirganjaya/"
+              target="_blank"
+              class="flex items-center gap-2 text-sm custom-link"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="size-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                />
+                <rect width="4" height="12" x="2" y="9" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/SieDeta"
+              target="_blank"
+              class="flex items-center gap-2 text-sm custom-link"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="size-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                />
+                <path d="M9 18c-4.51 2-5-2-7-2" />
+              </svg>
+              GitHub
+            </a>
+            <a
+              href="CV_Sie Deta Dirganjaya.pdf"
+              download
+              class="flex items-center gap-2 text-sm custom-link"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="size-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"
+                />
+                <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+                <path d="M16 22a4 4 0 0 0-8 0" />
+                <circle cx="12" cy="15" r="3" />
+              </svg>
+              Download CV
+            </a>
+          </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="lg:col-span-10 space-y-8 lg:pl-12">
+          <!-- About me -->
+          <section>
+            <h2 class="text-2xl font-bold text-gray-600 mb-2">About me</h2>
+            <p class="text-gray-700 mb-4">
+              I am a final-year undergraduate student at
+              <a href="https://dinus.ac.id/" target="_blank"
+                >Dian Nuswantoro University</a
+              >. My research interests are in systems and networking, with an emphasis on building adaptive, high-performance runtime systems for cloud platforms. I explore how telemetry signals, approximate computation (e.g., sketches, sampling), and machine learning-based optimization can be used to improve scalability, reduce operational costs, and enhance responsiveness under real-world workloads.
+            </p>
+            <!-- <p class="text-gray-700">
+              Prior to my PhD studies, I received my B.E. for Computer Science
+              from Xi'an Jiaotong University in 2021.
+            </p> -->
+          </section>
+
+          <!-- News -->
+          <section>
+            <h2 class="text-2xl font-bold text-gray-600 mb-2">News</h2>
+            <ul class="space-y-2 text-gray-700">
+              <li>
+                [09/2025] <a href="https://github.com/Froot-NetSys/Promsketch-Standalone" target="_blank">PromSketch-Standalone</a> will be released as an open-source project.
+              </li>
+               <li>
+                [09/2025] Analyzing the Impact of Transpose Layers on CNN-Based Deep Learning will be presented at iSEMANTIC’25
+              </li>
+              <li>
+                [05/2025] I will be collaborating with <a href="https://zaoxing.github.io/" target="_blank">Prof. Alan Zaoxing Liu</a> this summer.
+              </li>
+              <li>
+                [07/2025] Analyzing the Impact of Transpose Layers on CNN-Based Deep Learning was accepted by
+                <a href="https://isemantic.dinus.ac.id/2025/" target="_blank">iSEMANTIC'25</a>!
+              </li>
+              <li>
+                [01/2025] I will be joining the <a href="https://www.uchicago.edu/en" target="_blank">UChicago-Indonesia Research Training Program </a> this winter!
+              </li>
+              <li>
+                [08/2024] I will be a Research Assistant at <a href="https://dinus.ac.id/en/fakultas-ilmu-komputer/" target="_blank">Dinus Research Center</a>.
+                
+              </li>
+              <li>
+                [08/2024] I will be a Teaching Assistant for Machine Learning and Data Science courses at Dian Nuswantoro University!
+              </li>
+              <li>
+                [08/2024] I will be interning at 
+                <a href="https://bengkelkoding.dinus.id/" target="_blank">Dinus AI Research and Development Group</a> this fall!
+              </li>
+            </ul>
+          </section>
+
+          <!-- Publications -->
+          <section>
+            <h2 class="text-2xl font-bold text-gray-600 mb-2">Publications</h2>
+            <div class="space-y-6">
+              <!-- Publication 1 -->
+              <!-- <div>
+                <h3 class="font-semibold text-gray-600 mb-1">
+                  [HotNets'25] Towards Verifiable Network Telemetry without
+                  Special Purpose Hardware
+                </h3>
+                <p class="text-sm text-gray-600 mb-1">
+                  Jaechan An, Zeying Zhu, Ian Miers, Zaoxing Liu
+                </p>
+                <p class="text-sm text-gray-600">to appear in HotNets'25</p>
+              </div> -->
+
+              <!-- Publication 2 -->
+              <div>
+                <h3 class="font-semibold text-gray-600 mb-1">
+                  [iSEMANTIC'25] Analyzing the Impact of Transpose Layers on CNN-Based Deep Learning
+                </h3>
+                <p class="text-sm text-gray-600 mb-2">
+                  <u><strong>Sie, Deta Dirganjaya</strong></u>, Guruh Fajar Shidik, Maulidya Ayu Ardiena, Radhitya Marendratama, and Edi Jaya Kusuma
+                </p>
+                <p class="text-sm text-gray-600 mb-1">to appear in iSEMANTIC'25</p>
+                <div class="flex gap-2 flex-wrap text-sm">
+                  <a href="./paper/isemantic25_deta.pdf" target="_blank">[Paper]</a>
+                  <a href="https://drive.google.com/drive/folders/1zexVPE-xtaJtyZsrq-FHd2DXnZHWRfyh" target="_blank">[Code]</a>
+                  <!-- <a href="#" target="_blank">[Slides]</a> -->
+                  <a href="#" target="_blank">[Demo]</a>
+                </div>
+                <details class="mt-2">
+                  <summary>Paper Summary</summary>
+                  <p class="text-sm text-gray-600">
+                    This study evaluates the impact of integrating transpose convolution (ConvTranspose2d) layers into two modern YOLO architectures, YOLOv5m and YOLOv8m, for real-time pothole detection in complex road environments. The research replaces standard upsampling layers with learnable transpose layers in the detection head to better recover fine spatial details, which is important for identifying small, irregular, and partially obscured potholes. Experimental results show performance improvements in both models: YOLOv5m with transpose layers achieved a 1.57% increase in mAP@50, while YOLOv8m achieved a 3.46% improvement, though with higher inference latency. YOLOv5m provided the best balance between accuracy and real-time operation, while YOLOv8m benefited from stronger recall gains. These findings suggest that learnable upsampling can enhance detection sensitivity, particularly in visually complex scenarios, and can be applied to other real-time detection tasks that require detailed feature reconstruction.
+                  </p>
+                </details>
+              </div>
+
+              <!-- Publication 3 -->
+              <!-- <div>
+                <h3 class="font-semibold text-gray-600 mb-1">
+                  [SIGMETRICS'25] Exploiting Kubernetes Autoscaling for Economic
+                  Denial of Sustainability
+                </h3>
+                <p class="text-sm text-gray-600 mb-2">
+                  Jonathan Chamberlain, Jilin Zheng, Zeying Zhu, Zaoxing Liu,
+                  David Starobinski
+                </p>
+                <p class="text-sm text-gray-600 mb-1">
+                  to appear in SIGMETRICS'25
+                </p>
+                <div class="flex gap-2 flex-wrap text-sm">
+                  <a href="#" target="_blank">[Paper]</a>
+                </div>
+                <details class="mt-2">
+                  <summary>Paper Summary</summary>
+                  <p class="text-sm text-gray-600">
+                    Placeholder summary for the paper.
+                  </p>
+                </details>
+              </div> -->
+
+              <!-- Publication 4 -->
+              <!-- <div>
+                <h3 class="font-semibold text-gray-600 mb-1">
+                  [FAST'24] In-Memory Key-Value Store Live Migration with
+                  NetMigrate
+                </h3>
+                <p class="text-sm text-gray-600 mb-2">
+                  Zeying Zhu, Yibo Zhao, Zaoxing Liu
+                </p>
+                <p class="text-sm text-gray-600 mb-2">
+                  <span class="text-blue-500"
+                    >[Manuscript ready upon request]</span
+                  >
+                </p>
+                <div class="flex gap-2 flex-wrap text-sm">
+                  <a href="#" target="_blank">[Paper]</a>
+                  <a href="#" target="_blank">[Code]</a>
+                  <a href="#" target="_blank">[Slides]</a>
+                  <a href="#" target="_blank">[FAST'24 Talk]</a>
+                  <a href="#" target="_blank">[P4 Workshop Talk]</a>
+                </div>
+                <details class="mt-2">
+                  <summary>Paper Summary</summary>
+                  <p class="text-sm text-gray-600">
+                    Placeholder summary for the paper.
+                  </p>
+                </details>
+              </div> -->
+
+              <!-- Publication 5 -->
+              <!-- <div>
+                <h3 class="font-semibold text-gray-600 mb-1">
+                  [NSDI'23] Arya: Arbitrary Graph Pattern Mining with
+                  Decomposition-based Sampling
+                </h3>
+                <p class="text-sm text-gray-600 mb-2">
+                  Zeying Zhu <span class="text-xs">*</span>, Kan Wu
+                  <span class="text-xs">*</span>, Zaoxing Liu
+                </p>
+                <div class="flex gap-2 flex-wrap text-sm">
+                  <a href="#" target="_blank">[Paper]</a>
+                  <a href="#" target="_blank">[Code]</a>
+                  <a href="#" target="_blank">[Slides]</a>
+                  <a href="#" target="_blank">[Talk]</a>
+                </div>
+                <details class="mt-2">
+                  <summary>Paper Summary</summary>
+                  <p class="text-sm text-gray-600">
+                    Placeholder summary for the paper.
+                  </p>
+                </details>
+                <p class="text-xs text-gray-500 mt-2">*Equal Contribution</p>
+              </div>
+            </div>
+          </section> -->
+
+          <!-- Experience -->
+          <section>
+            <h2 class="text-2xl font-bold text-gray-600 mb-2">Experience</h2>
+            <div class="space-y-4">
+              <div>
+                <h3 class="font-semibold text-gray-600">Research Intern</h3>
+                <p class="text-sm text-gray-600">
+                  University of Maryland, College Park, United States
+                </p>
+                <p class="text-sm text-gray-600 mb-1">May. 2025 - Present</p>
+                <p class="text-sm text-gray-700">
+                  Fortunate to collaborate with
+                  <a href="#" target="_blank">Prof. Alan Zaoxing Liu</a>
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-semibold text-gray-600">UChicago-Indonesia Research Training Program</h3>
+                <p class="text-sm text-gray-600">
+                  University of Chicago, Illinois, United States
+                </p>
+                <p class="text-sm text-gray-600 mb-1">Jan. 2025 - Jun. 2025</p>
+                <p class="text-sm text-gray-700">
+                  Fortunate to be mentored by
+                  <a href="#" target="_blank">Prof. Haryadi S. Gunawi</a>
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-semibold text-gray-600">Research Assistant</h3>
+                <p class="text-sm text-gray-600">
+                  Dinus Research Center, Dian Nuswantoro University, Indonesia
+                </p>
+                <p class="text-sm text-gray-600 mb-1">Aug. 2024 - Jan. 2025</p>
+                <p class="text-sm text-gray-700">
+                  Fortunate to be advised by
+                  <a href="#" target="_blank">Prof. Dr. Guruh Fajar Shidik</a>
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-semibold text-gray-600">Research Intern</h3>
+                <p class="text-sm text-gray-600">
+                  Dinus AI Research and Development Group, Dian Nuswantoro University, Indonesia
+                </p>
+                <p class="text-sm text-gray-600 mb-1">Aug. 2024 - Jan. 2025</p>
+                <p class="text-sm text-gray-700">
+                  Fortunate to be mentored by
+                  <a href="#" target="_blank">Ardytha Luthfiarta</a> and
+                  <a href="#" target="_blank">Adhitya Nugraha</a>
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Teaching -->
+          <section>
+            <h2 class="text-2xl font-bold text-gray-600 mb-2">Teaching</h2>
+            <div class="space-y-3 text-sm">
+              <div>
+                <h3 class="font-semibold text-gray-600">
+                  Teaching Assistant, A11.64703 Machine Learning
+                </h3>
+                <p class="text-gray-600">
+                  Dian Nuswantoro University,
+                  <a href="https://bengkelkoding.dinus.id/learning-path" target="_blank">Fall 2024</a>
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-semibold text-gray-600">
+                  Teaching Assistant, A11.64703 Data Science
+                </h3>
+                <p class="text-gray-600">
+                  Dian Nuswantoro University,
+                  <a href="https://bengkelkoding.dinus.id/learning-path" target="_blank">Fall 2024</a>
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Open-Source Project -->
+          <section>
+            <h2 class="text-2xl font-bold text-gray-600 mb-2">
+              Open-Source Project
+            </h2>
+            <div class="space-y-2 text-gray-700">
+              <div>
+                <h3 class="font-semibold text-gray-600">
+                  PromSketch-Standalone
+                </h3>
+                <!-- <p class="text-sm text-gray-600 mb-1">Personal Project</p> -->
+                <div class="flex gap-2 flex-wrap text-sm">
+                  <a href="https://github.com/Froot-NetSys/Promsketch-Standalone" target="_blank">[Code]</a>
+                  <a href="#" target="_blank">[Demo]</a>
+                </div>
+                <details class="mt-2">
+                  <summary>Description</summary>
+                  <p class="text-sm text-gray-600">
+                    PromSketch-Standalone is a fully autonomous cloud telemetry runtime that supports high-throughput ingestion, sketch-based storage, PromQL-compatible querying, and visualization without relying on traditional monitoring systems. It features a parallel, event-driven ingestion pipeline capable of processing millions of time-series samples per second with significantly reduced latency and resource overhead. The system integrates a sketch-aware query and storage engine that performs real-time analytics directly over compressed metric summaries, providing high statistical accuracy while drastically reducing memory footprint.
+                  </p>
+                </details>
+              </div>
+
+              <div>
+                <h3 class="font-semibold text-gray-600">
+                  VSA: Visual Smart Assistant
+                </h3>
+                <!-- <p class="text-sm text-gray-600 mb-1">Personal Project</p> -->
+                <div class="flex gap-2 flex-wrap text-sm">
+                  <a href="https://github.com/BengkelKoding22/VSA-BE-FastAPI" target="_blank">[Code]</a>
+                  <a href="https://drive.google.com/file/d/127e17ySPeh7lIreoRntP5JjjO94p9J0p/view?usp=sharing" target="_blank">[Demo]</a>
+                </div>
+                <details class="mt-2">
+                  <summary>Description</summary>
+                  <p class="text-sm text-gray-600">
+                    Virtual Smart Assistant (VSA) is a personalized companion system designed to support students at Dian Nuswantoro University in both campus services and emotional well-being. It detects student emotions using facial recognition and a custom lightweight CNN for edge-based emotion tracking, and responds empathetically through an LLM-powered conversational engine trained on an Indonesian student-dialogue corpus. VSA features real-time noise suppression for clear voice interaction and is deployed on NVIDIA Jetson and Raspberry Pi devices, enabling adaptive, low-latency inference under limited compute and bandwidth conditions. The system aims to provide an accessible, responsive, and supportive virtual presence for students facing academic or personal challenges.
+                  </p>
+                </details>
+              </div>
+
+              <div>
+                <h3 class="font-semibold text-gray-600">
+                  CLCM: Custom Lightweight CNN Model for low-end edge devices
+                </h3>
+                <!-- <p class="text-sm text-gray-600 mb-1">Personal Project</p> -->
+                <div class="flex gap-2 flex-wrap text-sm">
+                  <a href="https://github.com/SieDeta/VSA-FaceR-FER" target="_blank">[Code]</a>
+                  <a href="https://drive.google.com/file/d/1ICI2hbX4HN_E80Bsi7ZC_9u3pyiqUlua/view" target="_blank">[Demo]</a>
+                </div>
+                <details class="mt-2">
+                  <summary>Description</summary>
+                  <p class="text-sm text-gray-600">
+                    Low-end edge devices such as the Jetson Nano are constrained by limited computing power, memory, and graphics processing capacity, posing challenges for running complex models efficiently. To overcome these limitations, lightweight and fast models are essential to ensure real-time performance without lag, enabling timely and accurate emotional responses for users. In this research, we introduce the Custom Lightweight CNN Model (CLCM), a CNN-based face recognition model optimized for speed and efficiency while maintaining high accuracy. The results demonstrate that CLCM outperforms well-known pre-trained models, achieving up to 3× faster inference speed, with an average real-time detection time of 13 ms. Additionally, the model maximizes GPU utilization on the Jetson Nano, reaching 90% efficiency through CUDA integration, further enhancing performance without compromising device limitations.
+                  </p>
+                </details>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- Awards -->
+          <section>
+            <h2 class="text-2xl font-bold text-gray-600 mb-2">Awards</h2>
+            <ul class="space-y-2 text-gray-700 list-disc list-inside">
+              <li>
+               Flagship Program Student of Department of Computer Science, Dian Nuswantoro University 2023 
+              </li>
+            </ul>
+          </section>
+        </main>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer
+      class="bg-gray-100 py-4 text-center text-gray-600 text-xs border border-t border-gray-300"
+    >
+      © 2025 Deta Dirganjaya. All rights reserved.
+    </footer>
+
+    <script>
+      const followBtn = document.getElementById("followBtn");
+      const dropdownMenu = document.getElementById("dropdownMenu");
+
+      followBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        dropdownMenu.classList.toggle("hidden");
+      });
+
+      document.addEventListener("click", (e) => {
+        if (!dropdownMenu.contains(e.target) && e.target !== followBtn) {
+          dropdownMenu.classList.add("hidden");
+        }
+      });
+    </script>
+  </body>
+</html>
