@@ -1,0 +1,44 @@
+<section id="publications">
+  <h2 class="mb-3 text-2xl lg:text-[28px] font-bold leading-tight text-gray-600">Publications</h2>
+  <div class="space-y-6">
+
+    <!-- [iSEMANTIC'25] -->
+    <div>
+      <h3 class="text-sm lg:text-base font-semibold text-gray-600 mb-1">
+        [iSEMANTIC'25] Analyzing the Impact of Transpose Layers on CNN-Based Deep Learning
+      </h3>
+      <p class="text-sm text-gray-600 mb-2">
+        <u><strong>Sie Deta Dirganjaya</strong></u>, Guruh Fajar Shidik, Maulidya Ayu Ardiena,
+        Radhitya Marendratama, and Edi Jaya Kusuma.
+      </p>
+      <div class="flex gap-2 flex-wrap text-sm">
+        <a href="https://ieeexplore.ieee.org/document/11292166/" target="_blank">[Paper]</a>
+        <a href="https://drive.google.com/drive/folders/1zexVPE-xtaJtyZsrq-FHd2DXnZHWRfyh" target="_blank">[Code]</a>
+        <a href="https://drive.google.com/file/d/1hEkc9NN1lof9knFPZ9legqYSUymHn-fe/view?usp=sharing"
+          target="_blank">[Slides]</a>
+        <a href="https://youtu.be/TLXBmhHyydM?si=8gaCC4LTkD_BRRY7" target="_blank">[Demo]</a>
+      </div>
+      <img src="misc/iSEMANTIC-Analyzing.png" alt="iSEMANTIC'25 paper preview"
+        class="mt-3 w-full max-w-md border border-gray-200 rounded" />
+      <details class="mt-2">
+        <summary>Paper Summary</summary>
+        <p class="text-sm text-gray-600">
+          This study evaluates the impact of integrating transpose convolution (ConvTranspose2d) layers into two modern
+          YOLO architectures, YOLOv5m and YOLOv8m, for real-time pothole detection in complex road environments. The
+          research replaces standard upsampling layers with learnable transpose layers in the detection head to better
+          recover fine spatial details, which is important for identifying small, irregular, and partially obscured
+          potholes. Experimental results show performance improvements in both models: YOLOv5m with transpose layers
+          achieved a 1.57% increase in mAP@50, while YOLOv8m achieved a 3.46% improvement, though with higher inference
+          latency. YOLOv5m provided the best balance between accuracy and real-time operation, while YOLOv8m benefited
+          from stronger recall gains. These findings suggest that learnable upsampling can enhance detection
+          sensitivity,
+          particularly in visually complex scenarios, and can be applied to other real-time detection tasks that require
+          detailed feature reconstruction.
+        </p>
+      </details>
+    </div>
+
+    <!-- Future publications go here -->
+
+  </div>
+</section>

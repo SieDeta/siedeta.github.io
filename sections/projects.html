@@ -1,0 +1,149 @@
+<section id="services">
+  <h2 class="mb-5 text-2xl lg:text-[28px] font-bold leading-tight text-gray-600">Open-Source Project</h2>
+
+  <!-- Part 1: Systems & Infrastructure -->
+  <p class="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">Systems &amp; Infrastructure</p>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-8">
+
+    <!-- Card: ProjectDMX -->
+    <div class="project-card" data-title="ProjectDMX"
+      data-cc='CC: <a href="https://github.com/Froot-NetSys" target="_blank">UMD Froot Lab</a>'
+      data-links='<a href="https://github.com/ProjectDMX" target="_blank">[GitHub]</a> <a href="https://projectdmx.github.io/blog/" target="_blank">[Blog]</a>'
+      data-desc="ProjectDMX is a research initiative focused on internal-state analysis of large language models (LLMs) using the vLLM inference framework. Its core tool, DMI, brings internal-state capture to the vLLM inference path, enabling researchers to extract hidden states, activation tensors, and other internal model data during both prefill and decode phases. DMI captures 13× more internal data than vLLM's native extraction capabilities while incurring 15–17× lower performance overhead than alternative approaches — making it practical for test-time research, model interpretability, and observable inference behavior analysis.">
+      <div class="card-image-wrap">
+        <div class="carousel">
+          <div class="carousel-track">
+            <img src="misc/DMI.png" alt="ProjectDMX preview 1" />
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">CC: <a href="https://github.com/Froot-NetSys" target="_blank">UMD Froot Lab</a></span>
+        <h3 class="card-title">ProjectDMX</h3>
+        <p class="card-excerpt">A research platform for internal-state analysis of LLMs on vLLM — capturing 13× more tensor data with 15–17× lower overhead than alternatives.</p>
+        <div class="card-links">
+          <a href="https://github.com/ProjectDMX" target="_blank">[GitHub]</a>
+          <a href="https://projectdmx.github.io/blog/" target="_blank">[Blog]</a>
+        </div>
+        <button class="desc-btn" onclick="openProjectModal(this.closest('.project-card'))">Description</button>
+      </div>
+    </div>
+
+    <!-- Card: ProjectASAP -->
+    <div class="project-card" data-title="ProjectASAP"
+      data-cc='CC: <a href="https://github.com/Froot-NetSys" target="_blank">UMD Froot Lab</a> &amp; <a href="https://www.cylab.cmu.edu/" target="_blank">CMU Cylab</a>'
+      data-links='<a href="https://github.com/ProjectASAP" target="_blank">[GitHub]</a> <a href="https://projectasap.github.io/" target="_blank">[Blog]</a>'
+      data-desc="ProjectASAP addresses the evolving demands of modern data management for agent-based systems, delivering better, faster, and cheaper data pipelines for next-generation agentic workloads. The project has released two open-source tools: ASAPQuery, a drop-in accelerator for analytics queries that dramatically improves dashboard responsiveness (presented at GrafanaCon and Observability Day Europe), and FlinkSketch, which democratizes sketch-based data structures for the Apache Flink streaming community. ProjectASAP sits at the intersection of data infrastructure and emerging AI workloads, evolving traditional pipelines to support the faster processing timescales demanded by modern agent-based systems.">
+      <div class="card-image-wrap">
+        <div class="carousel">
+          <div class="carousel-track">
+            <img src="misc/projectASAP.png" alt="ProjectASAP preview 1" />
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">CC: <a href="https://github.com/Froot-NetSys" target="_blank">UMD Froot Lab</a> & <a
+            href="https://www.cylab.cmu.edu/" target="_blank">CMU Cylab</a></span>
+        <h3 class="card-title">ProjectASAP</h3>
+        <p class="card-excerpt">Open-source data pipeline tools for agent-based systems — featuring ASAPQuery for accelerated analytics and FlinkSketch for sketch-based stream processing on Apache Flink.</p>
+        <div class="card-links">
+          <a href="https://github.com/ProjectASAP" target="_blank">[GitHub]</a>
+          <a href="https://projectasap.github.io/" target="_blank">[Blog]</a>
+        </div>
+        <button class="desc-btn" onclick="openProjectModal(this.closest('.project-card'))">Description</button>
+      </div>
+    </div>
+
+    <!-- Card: PromSketch-Standalone -->
+    <div class="project-card" data-title="PromSketch-Standalone"
+      data-cc='CC: <a href="https://github.com/Froot-NetSys" target="_blank">UMD Froot Lab</a>'
+      data-links='<a href="https://github.com/Froot-NetSys/Promsketch-Standalone" target="_blank">[GitHub]</a>'
+      data-desc="PromSketch-Standalone is a fully autonomous cloud telemetry runtime that supports high-throughput ingestion, sketch-based storage, PromQL-compatible querying, and visualization without relying on traditional monitoring systems. It features a parallel, event-driven ingestion pipeline capable of processing millions of time-series samples per second with significantly reduced latency and resource overhead. The system integrates a sketch-aware query and storage engine that performs real-time analytics directly over compressed metric summaries, providing high statistical accuracy while drastically reducing memory footprint.">
+      <div class="card-image-wrap">
+        <div class="carousel">
+          <div class="carousel-track">
+            <img src="misc/promsketchdiagram.png" alt="PromSketch-Standalone preview 1" />
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">CC: <a href="https://github.com/Froot-NetSys" target="_blank">UMD Froot Lab</a></span>
+        <h3 class="card-title">PromSketch-Standalone</h3>
+        <p class="card-excerpt">Sketch-aware query and storage engine performing real-time analytics directly over
+          compressed metric summaries — no Prometheus required.</p>
+        <div class="card-links">
+          <a href="https://github.com/Froot-NetSys/Promsketch-Standalone" target="_blank">[GitHub]</a>
+        </div>
+        <button class="desc-btn" onclick="openProjectModal(this.closest('.project-card'))">Description</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Part 2: Edge AI & Embedded Systems -->
+  <p class="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">Edge AI &amp; Embedded Systems</p>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+
+    <!-- Card: VSA -->
+    <div class="project-card" data-title="VSA: Visual Smart Assistant"
+      data-cc='CC: <a href="https://bengkelkoding.dinus.id/" target="_blank">Dinus AI Research and Development Group</a>'
+      data-links='<a href="https://github.com/BengkelKoding22/VSA-BE-FastAPI" target="_blank">[GitHub]</a> <a href="https://drive.google.com/file/d/127e17ySPeh7lIreoRntP5JjjO94p9J0p/view?usp=sharing" target="_blank">[Demo]</a> <a href="https://dinus.ac.id/2025/07/expo-bengkel-koding-2025-pamerkan-berbagai-inovasi-mahasiswa-di-bidang-teknologi/" target="_blank">[Blog]</a>'
+      data-desc="Virtual Smart Assistant (VSA) is a personalized companion system designed to support students at Dian Nuswantoro University in both campus services and emotional well-being. It detects student emotions using facial recognition and a custom lightweight CNN for edge-based emotion tracking, and responds empathetically through an LLM-powered conversational engine trained on an Indonesian student-dialogue corpus. VSA features real-time noise suppression for clear voice interaction and is deployed on NVIDIA Jetson and Raspberry Pi devices, enabling adaptive, low-latency inference under limited compute and bandwidth conditions.">
+      <div class="card-image-wrap">
+        <div class="carousel">
+          <div class="carousel-track">
+            <img src="misc/vsa-img.png" alt="VSA preview" />
+            <video controls playsinline preload="metadata">
+              <source src="misc/vsa-vid.mp4" type="video/mp4" />
+            </video>
+            <video controls playsinline preload="metadata">
+              <source src="misc/VSA_demo.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">CC: <a href="https://bengkelkoding.dinus.id/" target="_blank">Dinus AI Research and
+            Development Group</a></span>
+        <h3 class="card-title">VSA: Visual Smart Assistant</h3>
+        <p class="card-excerpt">A personalized student companion deployed on Jetson &amp; Raspberry Pi — combining
+          facial emotion recognition with an LLM-powered conversational engine.</p>
+        <div class="card-links">
+          <a href="https://github.com/BengkelKoding22/VSA-BE-FastAPI" target="_blank">[GitHub]</a>
+          <a href="https://drive.google.com/file/d/127e17ySPeh7lIreoRntP5JjjO94p9J0p/view?usp=sharing"
+            target="_blank">[Demo]</a>
+          <a href="https://dinus.ac.id/2025/07/expo-bengkel-koding-2025-pamerkan-berbagai-inovasi-mahasiswa-di-bidang-teknologi/"
+            target="_blank">[Blog]</a>
+        </div>
+        <button class="desc-btn" onclick="openProjectModal(this.closest('.project-card'))">Description</button>
+      </div>
+    </div>
+
+    <!-- Card: CLCM -->
+    <div class="project-card" data-title="CLCM: Custom Lightweight CNN Model"
+      data-cc='CC: <a href="https://sti.dinus.id/" target="_blank">Dinus Research Center</a>'
+      data-links='<a href="https://github.com/SieDeta/VSA-FaceR-FER" target="_blank">[GitHub]</a> <a href="https://drive.google.com/file/d/1ICI2hbX4HN_E80Bsi7ZC_9u3pyiqUlua/view" target="_blank">[Demo]</a>'
+      data-desc="Low-end edge devices such as the Jetson Nano are constrained by limited computing power, memory, and graphics processing capacity, posing challenges for running complex models efficiently. We introduce the Custom Lightweight CNN Model (CLCM), a CNN-based face recognition model optimized for speed and efficiency while maintaining high accuracy. CLCM outperforms well-known pre-trained models, achieving up to 3× faster inference speed with an average real-time detection time of 13 ms. The model maximizes GPU utilization on the Jetson Nano, reaching 90% efficiency through CUDA integration.">
+      <div class="card-image-wrap">
+        <div class="carousel">
+          <div class="carousel-track">
+            <img src="misc/clcm.png" alt="CLCM preview" />
+            <img src="misc/clcm-2.png" alt="CLCM preview" />
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <span class="card-tag">CC: <a href="https://sti.dinus.id/" target="_blank">Dinus Research Center</a></span>
+        <h3 class="card-title">CLCM: Custom Lightweight CNN Model</h3>
+        <p class="card-excerpt">A face recognition model for low-end edge devices achieving 3× faster inference than
+          pre-trained alternatives, with 90% GPU utilization on the Jetson Nano.</p>
+        <div class="card-links">
+          <a href="https://github.com/SieDeta/VSA-FaceR-FER" target="_blank">[GitHub]</a>
+          <a href="https://drive.google.com/file/d/1ICI2hbX4HN_E80Bsi7ZC_9u3pyiqUlua/view" target="_blank">[Demo]</a>
+        </div>
+        <button class="desc-btn" onclick="openProjectModal(this.closest('.project-card'))">Description</button>
+      </div>
+    </div>
+
+  </div>
+</section>

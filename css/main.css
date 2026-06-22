@@ -1,0 +1,61 @@
+/* ── Base ────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #52adc8;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #3b7d91;
+}
+
+/* ── Utility ─────────────────────────────────────────── */
+.custom-link {
+  color: #6a7282;
+  text-decoration: none;
+}
+
+.custom-link:hover {
+  text-decoration: underline;
+}
+
+/* ── Layout ──────────────────────────────────────────── */
+.academic-main {
+  color: #4d5358 !important;
+}
+
+.academic-main h2,
+.academic-sidebar h1 {
+  color: #4b5055 !important;
+}
+
+.academic-sidebar {
+  color: #4d5358 !important;
+}
+
+/* ── Section overrides ───────────────────────────────── */
+#news ul {
+  font-size: 15px;
+}
+
+@media (min-width: 1024px) {
+  #news ul {
+    font-size: 17px;
+  }
+
+  #publications .text-sm,
+  #experience .text-sm,
+  #teaching .text-sm,
+  #awards .text-sm,
+  #services .text-sm {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}

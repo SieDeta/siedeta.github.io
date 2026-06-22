@@ -1,0 +1,279 @@
+/* ── Project Cards ───────────────────────────────────── */
+.project-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.1);
+}
+
+/* ── Card Image / Carousel ───────────────────────────── */
+.card-image-wrap {
+  background: #f3f4f6;
+  min-height: 240px;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.42s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.carousel-track img,
+.carousel-track video {
+  min-width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.carousel-track img {
+  pointer-events: none;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.88);
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 1.2rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.2s ease, background 0.15s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+.card-image-wrap:hover .carousel-btn {
+  opacity: 1;
+}
+
+.carousel-btn:hover {
+  background: #fff;
+}
+
+.carousel-prev { left: 8px; }
+.carousel-next { right: 8px; }
+
+.carousel-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+  z-index: 10;
+}
+
+.carousel-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.carousel-dot.active {
+  background: #fff;
+  transform: scale(1.4);
+}
+
+/* ── Card Body ───────────────────────────────────────── */
+.card-body {
+  padding: 18px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-tag {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #9ca3af;
+  margin-bottom: 6px;
+}
+
+.card-tag a {
+  color: #9ca3af;
+  text-decoration: none;
+}
+
+.card-tag a:hover {
+  text-decoration: underline;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1f2937;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.card-excerpt {
+  font-size: 0.875rem;
+  color: #6b7280;
+  line-height: 1.65;
+  flex: 1;
+  margin-bottom: 12px;
+}
+
+.card-links {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
+
+.desc-btn {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 7px 26px;
+  background: transparent;
+  border: 1.5px solid #52adc8;
+  color: #52adc8;
+  border-radius: 999px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+  text-decoration: none;
+}
+
+.desc-btn:hover {
+  background: #52adc8;
+  color: #fff;
+  transform: scale(1.04);
+}
+
+/* ── Project Modal ───────────────────────────────────── */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(17, 24, 39, 0.55);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.modal-overlay.is-open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-box {
+  background: #fff;
+  border-radius: 16px;
+  padding: 36px 40px 32px;
+  max-width: 620px;
+  width: 100%;
+  max-height: 82vh;
+  overflow-y: auto;
+  position: relative;
+  transform: translateY(28px) scale(0.97);
+  transition: transform 0.38s cubic-bezier(0.34, 1.45, 0.64, 1);
+}
+
+.modal-overlay.is-open .modal-box {
+  transform: translateY(0) scale(1);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: #9ca3af;
+  cursor: pointer;
+  transition: color 0.18s;
+  padding: 2px 6px;
+}
+
+.modal-close-btn:hover {
+  color: #374151;
+}
+
+.modal-box .modal-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #111827;
+  padding-right: 28px;
+  margin-bottom: 6px;
+}
+
+.modal-box .modal-cc {
+  font-size: 0.8125rem;
+  color: #9ca3af;
+  margin-bottom: 10px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.modal-box .modal-cc a {
+  color: #9ca3af;
+}
+
+.modal-box .modal-links {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
+
+.modal-divider {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 14px 0 18px;
+}
+
+.modal-box .modal-desc {
+  font-size: 0.9375rem;
+  color: #374151;
+  line-height: 1.8;
+}
